@@ -32,7 +32,7 @@ app.use(
         credentials: true,
     })
 );
-const port = process.env.PORT
+const port = process.env.PORT || 5000
 
 
 app.use("/auth", CustomerRouter);
